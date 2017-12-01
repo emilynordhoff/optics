@@ -105,8 +105,8 @@ nav {
 }
 .info-title {
   display: block;
-  width: 10rem;
   padding: 0.5rem 1.25rem;
+  width: 10rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -176,5 +176,33 @@ footer .container {
     padding: 1rem 0;
     width: 100%;
     text-align: center;
-    }
+  }
+  .business-info .container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .information {
+    font-size: 0.77rem;
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+  .info-title {
+    width: auto;
+    min-width: 0;
+    text-align: center;
+  }
+  .info-detail {
+    padding: 0 1rem;
+  }
+  footer .container {
+    width: 100%;
+    justify-content: center;
+  }
+  footer span {
+    display: none;
+  }
+  footer img {
+    padding: 4rem 0;
+  }
 }
