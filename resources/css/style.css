@@ -28,7 +28,7 @@ html {
   width: auto;
   padding: 0 1rem 0 2rem;
 }
-.nav-desktop li {
+.nav-desktop li, .nav-mobile li {
   padding: 1rem;
 }
 nav {
@@ -52,6 +52,7 @@ nav {
   margin-top: 10rem;
 }
 .banner {
+  display: flex;
   justify-content: flex-end;
 }
 .headline h1 {
@@ -123,4 +124,57 @@ footer .container {
   align-items: center;
   padding: 0.66rem 0 0.66rem 0;
   background-color: azure;
+}
+@media only screen and (max-width: 960px) {
+  .company {
+    top: 0rem;
+    position: static;
+  }
+  .main {
+    height: 22rem;
+  }
+  .headline {
+    padding: 0.75rem 4rem;
+    background-color: white;
+    margin-right: 2rem;
+    margin-top: 5rem;
+  }
+  .headline h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .container {
+    max-width: 100%;
+  }
+  .main {
+    background-position: -6rem;
+  }
+  .nav-desktop {
+    display: none;
+  }
+  .nav-mobile {
+    display: list-item;
+  }
+  .services .flex {
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+  .item span {
+    font-size: 0.77rem;
+  }
+  .item {
+    margin: 0.77rem;
+  }
+  .banner {
+    display: block;
+    position: relative;
+    top: 9rem;
+  }
+  .headline {
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    }
 }
